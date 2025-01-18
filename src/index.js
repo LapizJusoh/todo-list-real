@@ -1,5 +1,6 @@
 import "./styles.css";
 import display from "./display.js";
-import tasklistArray from "./addTask.js";
+import initialData from "./initialData.js";
 
+initialData();
 display();
