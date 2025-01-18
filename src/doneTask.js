@@ -4,5 +4,6 @@ import display from "./display.js";
 export default function doneTask(event, index) {
   event.preventDefault();
 
-  //tasklistArray.splice();
+  tasklistArray.splice(index,1);
+  display();
 }

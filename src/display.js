@@ -1,5 +1,6 @@
 import tasklistArray from "./taskListArray";
 import addTask from "./addTask.js";
+import doneTask from "./doneTask.js";
 
 export default function display() {
   const content = document.querySelector('#content');
@@ -24,7 +25,7 @@ export default function display() {
 
       p.innerHTML = tasklistArray[i].task;
       doneBtn.innerHTML = "Done";
-      //doneBtn.addEventListener("click", doneTask);
+      doneBtn.addEventListener("click", (e) => doneTask(e,i));
 
       taskList.appendChild(li);
       li.appendChild(div);
