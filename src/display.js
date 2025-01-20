@@ -3,15 +3,16 @@ import addTask from "./addTask.js";
 import doneTask from "./doneTask.js";
 
 export default function display() {
-  const content = document.querySelector('#content');
-  
-  if (document.querySelector("#content ol")) { // reset display list
+  const content = document.querySelector("#content");
+
+  if (document.querySelector("#content ol")) {
+    // reset display list
     content.removeChild(document.querySelector("#content ol"));
 
     const ol = document.createElement("ol");
     content.appendChild(ol);
   }
-  
+
   const taskList = document.querySelector("#content ol");
 
   for (let i = 0; i < tasklistArray.length + 1; i++) {
@@ -25,7 +26,7 @@ export default function display() {
 
       p.innerHTML = tasklistArray[i].task;
       doneBtn.innerHTML = "Done";
-      doneBtn.addEventListener("click", (e) => doneTask(e,i));
+      doneBtn.addEventListener("click", (e) => doneTask(e, i));
 
       taskList.appendChild(li);
       li.appendChild(div);

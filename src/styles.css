@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 
-#content > ol li{
+#content > ol li {
   margin-block: 10px;
 }
 
@@ -30,7 +30,7 @@ button {
 }
 
 button:hover {
-  background-color: #FFF6DA;
+  background-color: #fff6da;
 }
 
 #content {

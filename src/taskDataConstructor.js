@@ -3,4 +3,4 @@ export default class tasklistEntry {
     this.task = task;
     this.date = date;
   }
-};
+}
